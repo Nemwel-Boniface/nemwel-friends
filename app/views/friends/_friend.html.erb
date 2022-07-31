@@ -1,0 +1,23 @@
+<h2 class="text-center"><%= friend.first_name %></h2>
+<br/>
+<div class="row">
+  <div class="col-sm">
+    <p> Email: <%= friend.email %> </p>
+    <P> Phone Number: <%= friend.phone %> </p>
+    <p> Twitter: <%= friend.twitter %> </p>
+  </div>
+  <div class="col-sm">
+    
+  </div>
+</div>
+<br/>
+<div class="row">
+  <div class="col-sm">
+      <%= link_to "Edit Profile", edit_user_registration_path, class: "btn btn-primary" %>
+  </div>
+  <div class="col-sm">
+    <%= link_to "Add Friend", new_user_registration_path, class: "btn btn-primary" %>
+  </div>
+</div>
+<br/>
+<hr/>
